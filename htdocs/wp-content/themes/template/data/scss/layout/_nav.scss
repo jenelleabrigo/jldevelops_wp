@@ -1,0 +1,118 @@
+.l-nav {
+  &__trigger {
+    &__button {
+      height: 1.5rem;
+      width: 2rem;
+      border-radius: 0;
+      border: none;
+      background: none;
+      position: relative;
+    }
+
+    &__line {
+      position: absolute;
+      height: 0.2rem;
+      width: 100%;
+      display: block;
+      background: #000;
+      transition: 0.3s;
+
+      &:nth-child(1) {
+        top: 0;
+      }
+
+      &:nth-child(2) {
+        top: 0.5rem;
+      }
+
+      &:nth-child(3) {
+        top: 1rem;
+      }
+    }
+
+    .is-show-nav & {
+      &__line {
+        &:nth-child(1) {
+          top: 0.5rem;
+          transform: rotate(45deg);
+        }
+
+        &:nth-child(2) {
+          top: 0.5rem;
+          display: none;
+        }
+
+        &:nth-child(3) {
+          top: 0.5rem;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    width: 100%;
+
+    @include mq_sp {
+      display: block;
+      position: fixed;
+      top: 65px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      bottom: 100%;
+      transition: 0.3s;
+      background: #fff;
+      text-align: center;
+      overflow: auto;
+      z-index: 98;
+    }
+
+    &__menu {
+      width: auto;
+      padding-right: 1rem;
+
+      @include mq_sp {
+        width: 100%;
+        display: block;
+        margin-bottom: 2rem;
+      }
+
+      &__anchor {
+        text-decoration: none;
+        color: inherit;
+
+        &.is-active {
+          color: #fff;
+          position: relative;
+          pointer-events: none;
+        }
+
+        &:hover {
+          position: relative;
+
+          &::after {
+            position: absolute;
+            content: "";
+            height: 12.5px;
+            width: 16px;
+            background: url("../img/common/arrow-up-white.svg") no-repeat;
+            left: 0;
+            right: 0;
+            bottom: -15px;
+            margin: auto;
+          }
+        }
+      }
+    }
+
+    .is-show-nav & {
+      bottom: 0;
+
+      &__menu {
+
+      }
+    }
+  }
+}

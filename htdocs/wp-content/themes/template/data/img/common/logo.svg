@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="131" height="91" viewBox="0 0 131 91">
+  <g id="logo" transform="translate(-895 -133)">
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(895 140)" fill="#c78b99" stroke="#fff" stroke-width="10">
+      <circle cx="28" cy="28" r="28" stroke="none"/>
+      <circle cx="28" cy="28" r="23" fill="none"/>
+    </g>
+    <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(923 168)" fill="#fff" stroke="#c78b99" stroke-width="5">
+      <ellipse cx="28.5" cy="28" rx="28.5" ry="28" stroke="none"/>
+      <ellipse cx="28.5" cy="28" rx="26" ry="25.5" fill="none"/>
+    </g>
+    <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(940 133)" fill="#c78b99" stroke="#6c6c6c" stroke-width="10">
+      <ellipse cx="27" cy="28.5" rx="27" ry="28.5" stroke="none"/>
+      <ellipse cx="27" cy="28.5" rx="22" ry="23.5" fill="none"/>
+    </g>
+    <text id="DEVELOPS" transform="translate(933 207)" fill="#707070" font-size="19" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">DEVELOPS</tspan></text>
+    <text id="J" transform="translate(912 179)" fill="#707070" font-size="36" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">J</tspan></text>
+    <text id="L" transform="translate(956 173)" fill="#707070" font-size="36" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">L</tspan></text>
+  </g>
+</svg>

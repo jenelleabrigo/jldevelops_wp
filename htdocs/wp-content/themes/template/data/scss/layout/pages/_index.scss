@@ -1,0 +1,42 @@
+.p-index {
+  &__carousel {
+    height: 600px;
+    background: url("../img/index/bg-main-visual.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 65px;
+
+    @include mq_sp {
+      height: 20rem;
+      background: url("../img/index/sp_bg-main-visual.jpg") no-repeat;
+      background-size: cover;
+    }
+
+    &__text {
+      position: absolute;
+      top: 250px;
+
+      &1 {
+        font-size: 50px;
+        font-weight: bold;
+        line-height: 1.3;
+        margin-bottom: 20px;
+
+        &__span {
+          color: $primary;
+        }
+      }
+
+      &2 {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+
+        &__span {
+          color: $primary;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
