@@ -1,20 +1,45 @@
 .p-index {
+padding-top: 65px;
+
   &__carousel {
     height: 600px;
     background: url("../img/index/bg-main-visual.jpg") no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    background-position-y: 65px;
     position: relative;
-    top: 65px;
 
     @include mq_sp {
-      height: 20rem;
+      height: 100vh;
       background: url("../img/index/sp_bg-main-visual.jpg") no-repeat;
       background-size: cover;
+      background-attachment: fixed;
+      background-position-y: 65px;
     }
 
     &__text {
       position: absolute;
       top: 250px;
+
+      @include mq_pc {
+        &::before {
+          position: absolute;
+          content: "";
+          height: 92px;
+          width: 131px;
+          background: url("../img/common/logo.svg") no-repeat;
+          background-size: contain;
+          left: 0;
+          right: 0;
+          margin: auto;
+          top: -160px;
+          opacity: 0.2;
+        }
+      }
+
+      @include mq_sp {
+        top: 0;
+      }
 
       &1 {
         font-size: 50px;
@@ -38,5 +63,10 @@
         }
       }
     }
+  }
+
+  &__works {
+    background: #afafaf;
+    padding: 100px 0;
   }
 }

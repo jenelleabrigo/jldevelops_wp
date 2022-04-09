@@ -1,9 +1,16 @@
 <footer>
   <div class="l-footer">
     <div class="u-layout">
-      <p class="l-footer__logo"><a href="<?php echo home_url('/') ?>" class="l-footer__logo__anchor">Logo</a></p>
-      <p class="l-footer__copyright">All rights reserved 2022</p>
+      <p class="l-footer__logo"><a href="<?php echo home_url('/') ?>" class="l-footer__logo__anchor"> <img src="<?php echo get_template_directory_uri(); ?>/data/img/common/logo.svg" alt="jldevelops-logo"> </a></p>
+      <div class="l-footer__icon-container">
+        <a href="#" class="l-footer__icon-container__icon"><img src="<?php echo get_template_directory_uri(); ?>/data/img/common/tel.svg" alt="phone"></a>
+        <a href="#" class="l-footer__icon-container__icon"><img src="<?php echo get_template_directory_uri(); ?>/data/img/common/mail.svg" alt="mail"></a>
+        <a href="#" class="l-footer__icon-container__icon"><img src="<?php echo get_template_directory_uri(); ?>/data/img/common/fb.svg" alt="fb"></a>
+        <a href="#" class="l-footer__icon-container__icon"><img src="<?php echo get_template_directory_uri(); ?>/data/img/common/instagram.svg" alt="instagram"></a>
+        <a href="#" class="l-footer__icon-container__icon"><img src="<?php echo get_template_directory_uri(); ?>/data/img/common/linkedin.svg" alt="linkedin"></a>
+      </div>
     </div>
+    <p class="l-footer__copyright">© 2022 jl.develops</p>
   </div>
 </footer>
 

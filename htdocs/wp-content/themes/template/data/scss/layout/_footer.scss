@@ -1,15 +1,37 @@
 .l-footer {
-background: #afafaf;
+  background: url("../img/common/bg-footer.png") no-repeat;
+  background-size: cover;
+  background-position: center 12px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 35px 0 0;
+  margin-top: -100px;
 
   &__logo {
+    margin-bottom: 40px;
+
     &__anchor {
       text-decoration: none;
       color: inherit;
     }
   }
 
+  &__icon-container {
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 40px;
+
+    &__icon {
+      //
+    }
+  }
+
   &__copyright {
     text-align: center;
-    padding: 1rem 0;
+    padding: 7.5px 0;
+    background: $primary;
   }
 }

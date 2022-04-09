@@ -7,7 +7,7 @@ $pc-min-width: calc(#{$pc-layout-width}px + #{$pc-margin * 2});
 // SmartPhone
 $sp-width: 375;
 $sp-width-breakpoint: $sp-width * 2;
-$sp-margin: 2rem;
+$sp-margin: 1rem;
 
 //default
 $font-default: 'Noto Sans', sans-serif;
