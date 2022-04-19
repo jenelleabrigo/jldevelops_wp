@@ -25,7 +25,24 @@
     margin-bottom: 40px;
 
     &__icon {
-      //
+      position: relative;
+
+      &:hover {
+        opacity: 0.9;
+
+        &::after {
+          position: absolute;
+          content: "";
+          height: 10px;
+          width: 16px;
+          background: url("../img/common/arrow-up-pink.svg") no-repeat;
+          background-size: contain;
+          bottom: -20px;
+          left: 0;
+          right: 0;
+          margin: auto;
+        }
+      }
     }
   }
 

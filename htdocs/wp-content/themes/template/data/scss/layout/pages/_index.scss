@@ -66,7 +66,13 @@ padding-top: 65px;
   }
 
   &__works {
-    background: #afafaf;
-    padding: 100px 0;
+    background: url("../img/index/bg-works.png") no-repeat center center/cover;
+    padding: 100px 0 200px;
+  }
+
+  &__journey {
+    background: url("../img/index/bg-journey.png") no-repeat top center/cover;
+    padding: 170px 0 100px;
+    margin-top: -70px;
   }
 }
