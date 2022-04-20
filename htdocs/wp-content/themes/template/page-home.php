@@ -12,28 +12,51 @@
   </div>
   <div class="p-index__works">
     <div class="u-layout">
-      <h1 class="u-heading">This is Heading</h1>
-      <h2 class="u-subheading">This is Subheading</h2>
-      <p class="u-text is-big">This is Big Text</p>
-      <p class="u-text is-med">This is Medium Text</p>
-      <p class="u-text is-small">This is Small Text</p>
+      <h2 class="c-headline u-subheading u-font-serif">WORKS</h2>
 
-      <a href="#" class="c-button">Button</a>
-      <a href="#" class="c-button is-primary">Primary Button</a>
-      <a href="#" class="c-button is-secondary">Secondary Button</a>
+      <div class="p-index__works__inner">
+        <a href="#" class="p-index__works__inner__item">
+          <div class="p-index__works__inner__item__img-container">
+            <img src="<?php echo get_template_directory_uri();?>/data/img/works/img-sample.jpg" alt="project1" class="p-index__works__inner__item__img-container__img">
+          </div>
+          <div class="p-index__works__inner__item__text-container">
+            <p class="p-index__works__inner__item__text-container__title u-text is-big u-font-serif">PROJECT 1</p>
+            <p class="p-index__works__inner__item__text-container__description u-text is-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada posuere massa, non viverra tellus euismod a. Morbi consequat blandit sem, et luctus leo consequat id.</p>
+          </div>
+        </a>
+        <a href="#" class="p-index__works__inner__item">
+          <div class="p-index__works__inner__item__img-container">
+            <img src="<?php echo get_template_directory_uri();?>/data/img/works/img-sample.jpg" alt="project1" class="p-index__works__inner__item__img-container__img">
+          </div>
+          <div class="p-index__works__inner__item__text-container">
+            <p class="p-index__works__inner__item__text-container__title u-text is-big u-font-serif">PROJECT 1</p>
+            <p class="p-index__works__inner__item__text-container__description u-text is-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada posuere massa, non viverra tellus euismod a. Morbi consequat blandit sem, et luctus leo consequat id.</p>
+          </div>
+        </a>
+        <a href="#" class="p-index__works__inner__item">
+          <div class="p-index__works__inner__item__img-container">
+            <img src="<?php echo get_template_directory_uri();?>/data/img/works/img-sample.jpg" alt="project1" class="p-index__works__inner__item__img-container__img">
+          </div>
+          <div class="p-index__works__inner__item__text-container">
+            <p class="p-index__works__inner__item__text-container__title u-text is-big u-font-serif">PROJECT 1</p>
+            <p class="p-index__works__inner__item__text-container__description u-text is-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras malesuada posuere massa, non viverra tellus euismod a. Morbi consequat blandit sem, et luctus leo consequat id.</p>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
   <div class="p-index__journey">
     <div class="u-layout">
-      <h1 class="u-heading">This is Heading</h1>
-      <h2 class="u-subheading">This is Subheading</h2>
-      <p class="u-text is-big">This is Big Text</p>
-      <p class="u-text is-med">This is Medium Text</p>
-      <p class="u-text is-small">This is Small Text</p>
+      <h2 class="c-headline is-white u-font-serif">JOURNEY</h2>
 
-      <a href="#" class="c-button">Button</a>
-      <a href="#" class="c-button is-primary">Primary Button</a>
-      <a href="#" class="c-button is-secondary">Secondary Button</a>
+      <div class="p-index__journey__inner">
+        <table class="p-index__journey__inner__table">
+          <tr class="p-index__journey__inner__table__row u-text is-small">
+            <th class="p-index__journey__inner__table__date">SEPTEMBER 2021</th>
+            <td class="p-index__journey__inner__table__details">I started reading about MySQL in a well-known web development tutorial website w3schools. This was essential to me since we somehow use this tool in my work as Process Engineer in a korean manufacturing company. My reading became a habit by then so I also started reading about HTML and CSS out of curiosity about Web Developing in the same learning site.</td>
+          </tr>
+        </table>
+      </div>
     </div>
   </div>
 
