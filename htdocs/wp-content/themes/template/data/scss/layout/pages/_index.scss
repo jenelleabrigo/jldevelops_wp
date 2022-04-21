@@ -78,12 +78,12 @@ padding-top: 65px;
       align-items: center;
       flex-wrap: wrap;
 
-      &__item {
-        display: inline-block;
-        text-decoration: none;
-        color: inherit;
+      &__item-container {
+        display: block;
         width: 30%;
+      }
 
+      &__item {
         &__img-container {
             height: 250px;
             margin-bottom:25px;
@@ -111,6 +111,45 @@ padding-top: 65px;
           }
         }
       }
+
+      &__modal {
+        display: none;
+        top: 65px;
+        left: 0;
+        z-index: 99;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background: rgba(112, 112, 112, 0.5);
+
+        &__content {
+          overflow: auto;
+          height: 70%;
+          width: 80%;
+          margin: auto;
+          background: #fff;
+          position: absolute;
+          top: 10%;
+          left: 0;
+          right: 0;
+          margin: auto;
+          padding: 10px 15px;
+        }
+
+        &__close {
+          font-size: 50px;
+          position: relative;
+          z-index: 100;
+          position: absolute;
+          right: 5%;
+          top: 0;
+          cursor: default;
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
     }
   }
 
@@ -121,9 +160,23 @@ padding-top: 65px;
     margin-top: -70px;
 
     &__inner {
+      padding-left: 15px;
+
+      @include mq_sp {
+        padding-left: 0;
+      }
+
       &__table {
+        border-collapse: collapse;
+
         &__row {
+          margin-bottom: 40px;
           color: #fff;
+          border-left: 1px solid $secondary;
+
+          &:last-child {
+            border-left: 0;
+          }
         }
 
         &__date {
@@ -131,7 +184,7 @@ padding-top: 65px;
           vertical-align: top;
           position: relative;
           width: 200px;
-          padding-left: 50px;
+          padding-bottom: 40px;
 
           &::before {
             position: absolute;
@@ -139,14 +192,37 @@ padding-top: 65px;
             height: 30px;
             width: 30px;
             background: url("../img/journey/icon-circle.svg") no-repeat center center/contain;
-            left: 0;
+            left: -15px;
+            top: -4px;
           }
         }
 
         &__details {
-          padding-left: 50px;
+          padding: 0 0 40px 50px;
         }
       }
     }
+  }
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: $secondary;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(112, 112, 112, 0.7);
   }
 }
