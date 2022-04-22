@@ -2,10 +2,10 @@
 
 <div class="p-index">
   <div class="p-index__carousel">
-    <div class="u-layout">
+    <div class="u-pc-layout">
       <div class="p-index__carousel__text">
-        <p class="p-index__carousel__text1 u-font-serif">Hi there! I am <span class="p-index__carousel__text1__span">JEN</span>.</p>
-        <p class="p-index__carousel__text2">A developer that loves designing and developing.<br> <span></span> Let me build your idea into reality for I am<br><span class="p-index__carousel__text2__span">YOUR DREAM DEVELOPER</span>.</p>
+        <p class="p-index__carousel__text1 u-font-serif">Hi there! <span class="p-index__carousel__text1__span1"><br class="u-sp-only">I am<span> <span class="p-index__carousel__text1__span2">JEN</span>.</p>
+        <p class="p-index__carousel__text2">A developer that loves <br class="u-sp-only">designing and developing.<br> <span></span> Let me build your idea into reality for I am<br><span class="p-index__carousel__text2__span">YOUR DREAM DEVELOPER.</span></p>
         <a href="#" class="c-button is-white u-font-serif">Build Now!</a>
       </div>
     </div>

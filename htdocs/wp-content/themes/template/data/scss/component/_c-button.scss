@@ -9,6 +9,10 @@
   transition: 0.3s;
   position: relative;
 
+  @include mq_sp {
+    margin: auto;
+  }
+
   &::after {
     position: absolute;
     content: "";
