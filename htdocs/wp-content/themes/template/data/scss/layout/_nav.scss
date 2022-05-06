@@ -1,4 +1,8 @@
 .l-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   &__trigger {
     &__button {
       height: 1.5rem;
@@ -67,6 +71,7 @@
       text-align: center;
       overflow: auto;
       z-index: 98;
+      padding-top: 3rem;
     }
 
     &__menu {
@@ -86,7 +91,10 @@
         &.is-active {
           color: #fff;
           position: relative;
-          pointer-events: none;
+
+          @include mq_sp {
+            color: $primary;
+          }
         }
 
         &:hover {
@@ -113,6 +121,25 @@
 
       &__menu {
 
+      }
+    }
+
+    &__contact {
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      color: #fff;
+      background: #fff;
+      border-radius: 3rem;
+      border: 1px dashed $secondary;
+      padding: 0.3rem 1rem;
+
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+
+      & > img {
+        height: 1rem;
       }
     }
   }

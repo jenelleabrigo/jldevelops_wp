@@ -9,6 +9,44 @@
   padding: 35px 0 0;
   margin-top: -100px;
 
+  &__scroll {
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    height: 20px;
+    width: 90px;
+    transform: rotate(-90deg);
+    transition: 0.3s;
+    opacity: 0;
+
+    &.is-show {
+      opacity: 1;
+    }
+
+    &__anchor {
+      display: block;
+      text-decoration: none;
+      color: $secondary;
+      font-size: 1rem;
+      font-weight: bold;
+      position: relative;
+
+      &::after {
+        position: absolute;
+        content: "";
+        height: 12.5px;
+        width: 16px;
+        background: url("../img/common/arrow-up-white.svg") no-repeat;
+        background-size: contain;
+        top: 0;
+        bottom: 0;
+        right: 5px;
+        margin: auto;
+        transform: rotate(90deg);
+      }
+    }
+  }
+
   &__logo {
     margin-bottom: 40px;
 
@@ -44,10 +82,16 @@
           margin: auto;
         }
       }
+
+      & > img {
+        height: 1.5rem;
+        width: 1.5rem;
+      }
     }
   }
 
   &__copyright {
+    position: relative;
     text-align: center;
     padding: 7.5px 0;
     background: $primary;

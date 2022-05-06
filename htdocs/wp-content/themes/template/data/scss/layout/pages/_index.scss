@@ -89,13 +89,61 @@ padding-top: 65px;
     }
   }
 
+  &__techstack {
+    background: $primary;
+    padding: 100px 0;
+
+    &__inner {
+      background: #fff;
+      padding: 3rem;
+      border-radius: 30px;
+      border: 2px solid $secondary;
+
+      @include mq_sp {
+        padding: 2rem 1rem;
+      }
+
+      &__section {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        text-align: center;
+        grid-gap: 1.5rem 1rem;
+
+        @include mq_sp {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        &__name {
+          position: relative;
+          padding-top: 1.5rem;
+
+          &__span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            text-align: center;
+          }
+        }
+
+        &__logo {
+          height: 3rem;
+          width: 3rem;
+          border-radius: 100%;
+        }
+      }
+    }
+  }
+
   &__works {
     position: relative;
     background: url("../img/index/bg-works.png") no-repeat center center/cover;
-    padding: 50px 0 200px;
+    padding: 100px 0 200px;
 
     @include mq_sp {
       background: url("../img/index/sp_bg-works.png") no-repeat center center/cover;
+      padding: 100px 0 150px;
     }
 
     &__inner {
@@ -211,6 +259,7 @@ padding-top: 65px;
 
     @include mq_sp {
       background: url("../img/index/sp_bg-journey.png") no-repeat top center/cover;
+      padding: 100px 0 150px;
     }
 
     &__inner {
@@ -228,6 +277,12 @@ padding-top: 65px;
           color: #fff;
           border-left: 1px solid $secondary;
 
+          @include mq_sp {
+              border-left: 0;
+              margin-bottom: 2rem;
+              display: block;
+          }
+
           &:last-child {
             border-left: 0;
           }
@@ -240,6 +295,14 @@ padding-top: 65px;
           width: 200px;
           padding-bottom: 40px;
 
+          @include mq_sp {
+            display: block;
+            padding: 0 0 0 4rem;
+            text-align: left;
+            width: 100%;
+            margin-bottom: 1rem;
+          }
+
           &::before {
             position: absolute;
             content: "";
@@ -248,11 +311,39 @@ padding-top: 65px;
             background: url("../img/journey/icon-circle.svg") no-repeat center center/contain;
             left: -15px;
             top: -4px;
+
+            @include mq_sp {
+              left: 0;
+              top: 0;
+              height: 1.5rem;
+              width: 1.5rem;
+              z-index: 1;
+            }
+          }
+
+          &::after {
+            @include mq_sp {
+              position: absolute;
+              content: "";
+              height: 0;
+              width: 3.5rem;
+              border-bottom: 1px solid $secondary;
+              left: 0;
+              top: 0;
+              bottom: 0;
+              margin: auto;
+            }
           }
         }
 
         &__details {
           padding: 0 0 40px 50px;
+
+          @include mq_sp {
+            width: 100%;
+            display: block;
+            padding: 0;
+          }
         }
       }
     }
