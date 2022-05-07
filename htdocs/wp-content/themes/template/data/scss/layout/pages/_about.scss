@@ -1,0 +1,136 @@
+.p-about {
+  padding-top: 65px;
+
+  &__inner {
+    padding: 6rem 10rem;
+
+    @include mq_sp {
+      padding: 6rem 0;
+    }
+
+    &__resume {
+      text-decoration: none;
+      color: inherit;
+      padding: 10px 10px 10px 40px;
+      margin-left: auto;
+      margin-bottom: 2rem;
+
+      &::after {
+        display: none;
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        background: url("../img/common/pdf.svg") no-repeat;
+        background-size: contain;
+        height: 20px;
+        width: 20px;
+        left: 1rem;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+
+      &:hover {
+        &::after {
+          right: 23px;
+        }
+      }
+    }
+
+    &__section {
+        margin-bottom: 5rem;
+
+      &__heading {
+        font-size: 2rem;
+        font-weight: bold;
+        color: $primary;
+        margin-bottom: 2rem;
+        position: relative;
+
+        &::after {
+          position: absolute;
+          content: "";
+          height: 1px;
+          width: 100%;
+          background: $secondary;
+          left: 0;
+          bottom: -1rem;
+        }
+      }
+
+      &__item {
+          margin-bottom: 2rem;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+        &__title {
+          //
+        }
+
+        &__txt {
+          line-height: 1.5;
+        }
+
+        &__content {
+          &__list {
+            margin-left: 1.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+
+            &::before {
+              position: absolute;
+              content: "";
+              height: 10px;
+              width: 16px;
+              background: url("../img/common/arrow-up-pink.svg") no-repeat;
+              background-size: contain;
+              top: 7px;
+              left: 0;
+              margin: auto;
+              transform: rotate(90deg);
+            }
+
+            &__grid {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              margin-bottom: 0.5rem;
+
+              @include mq_sp {
+                display: block;
+              }
+            }
+
+            &__detail {
+              margin-left: 3rem;
+              padding-left: 1.5rem;
+              position: relative;
+
+              &::before {
+                position: absolute;
+                content: "";
+                height: 10px;
+                width: 16px;
+                background: url("../img/common/arrow-up-white.svg") no-repeat;
+                background-size: contain;
+                top: 7px;
+                left: 0;
+                margin: auto;
+                transform: rotate(90deg);
+              }
+
+              &.no-margin {
+                @include mq_sp {
+                  margin-left: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -36,7 +36,7 @@
                     <li class="l-nav__content__menu"><a href="<?php echo home_url('/#home')?>" class="l-nav__content__menu__anchor u-font-serif">Home</a></li>
                     <li class="l-nav__content__menu"><a href="<?php echo home_url('/#works')?>" class="l-nav__content__menu__anchor u-font-serif">Works</a></li>
                     <li class="l-nav__content__menu"><a href="<?php echo home_url('/#journey')?>" class="l-nav__content__menu__anchor u-font-serif">Journey</a></li>
-                    <li class="l-nav__content__menu"><a href="<?php echo home_url('/resume/')?>" class="l-nav__content__menu__anchor u-font-serif">Resume</a></li>
+                    <li class="l-nav__content__menu"><a href="<?php echo home_url('/resume/')?>" class="l-nav__content__menu__anchor u-font-serif">About Me</a></li>
                 </ul>
             </div>
             <a href="tel:09302983017" class="l-nav__content__contact u-pc-only"><img src="<?php echo get_template_directory_uri(); ?>/data/img/common/tel.svg" alt="phone"></a>
@@ -49,7 +49,7 @@
           <li class="l-nav__content__menu"><a href="<?php echo home_url('/#home')?>" class="l-nav__content__menu__anchor u-font-serif">Home</a></li>
           <li class="l-nav__content__menu"><a href="<?php echo home_url('/#works')?>" class="l-nav__content__menu__anchor u-font-serif">Works</a></li>
           <li class="l-nav__content__menu"><a href="<?php echo home_url('/#journey')?>" class="l-nav__content__menu__anchor u-font-serif">Journey</a></li>
-          <li class="l-nav__content__menu"><a href="<?php echo home_url('/resume/') ?>" class="l-nav__content__menu__anchor u-font-serif">Contact</a></li>
+          <li class="l-nav__content__menu"><a href="<?php echo home_url('/resume/') ?>" class="l-nav__content__menu__anchor u-font-serif">About Me</a></li>
       </ul>
   </div>
 </header>

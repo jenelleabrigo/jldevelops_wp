@@ -85,8 +85,13 @@
       }
 
       &__anchor {
+        font-weight: 1rem;
         text-decoration: none;
         color: inherit;
+
+        @include mq_sp {
+          font-weight: 1.5rem;
+        }
 
         &.is-active {
           color: #fff;
@@ -128,7 +133,6 @@
       font-size: 1rem;
       font-weight: bold;
       text-decoration: none;
-      color: #fff;
       background: #fff;
       border-radius: 3rem;
       border: 1px dashed $secondary;
@@ -140,6 +144,10 @@
 
       & > img {
         height: 1rem;
+      }
+
+      &:hover {
+        opacity: 0.7;
       }
     }
   }
