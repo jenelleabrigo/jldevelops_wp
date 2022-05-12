@@ -15,7 +15,7 @@ get_header();
 	<div class="p-about">
 		<div class="u-layout">
 			<div class="p-about__inner">
-				<a href="<?php echo home_url('/data/pdf/jenelleabrigo_resume2021.pdf')?>" class="p-about__inner__resume c-button is-pink">Download Formal Resume</a>
+				<a download="Jenelle Loise Abrigo Resume" href="http://jldevelops.localhost/wp-content/uploads/2022/05/jenelle-abrigo-resume_Software_2021.pdf" class="p-about__inner__resume c-button is-pink">Download Formal Resume</a>
 
 				<div class="p-about__inner__section">
 					<h2 class="p-about__inner__section__heading">Education</h2>

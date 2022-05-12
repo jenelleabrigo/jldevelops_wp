@@ -57,6 +57,7 @@
   &__content {
     display: flex;
     width: 100%;
+    padding-right: 1rem;
 
     @include mq_sp {
       display: block;
@@ -71,7 +72,7 @@
       text-align: center;
       overflow: auto;
       z-index: 98;
-      padding-top: 3rem;
+      padding: 3rem 0 0 0;
     }
 
     &__menu {
