@@ -145,6 +145,8 @@
 
       & > img {
         height: 1rem;
+        position: relative;
+        top: 0.2rem;
       }
 
       &:hover {

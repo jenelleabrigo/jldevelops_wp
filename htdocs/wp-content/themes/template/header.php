@@ -11,7 +11,7 @@
   <body>
 
 <header>
-  <div class="l-header" id="top">
+  <div class="l-header">
     <div class="l-header__inner">
         <?php if(is_front_page()): ?>
         <h1 class="l-header__logo"><a href="<?php echo home_url('/') ?>" class="l-header__logo__anchor"> <img src="<?php echo get_template_directory_uri(); ?>/data/img/common/logo.svg" alt="jldevelops-logo"> </a></h1>

@@ -10,12 +10,12 @@
 get_header();
 ?>
 
-<main>
+<main id="top">
 
 	<div class="p-about">
 		<div class="u-layout">
 			<div class="p-about__inner">
-				<a download="Jenelle Loise Abrigo Resume" href="http://jldevelops.localhost/wp-content/uploads/2022/05/jenelle-abrigo-resume_Software_2021.pdf" class="p-about__inner__resume c-button is-pink">Download Formal Resume</a>
+				<a download="Jenelle Loise Abrigo Resume" href="<?php echo get_template_directory_uri();?>/data/pdf/jenelle-abrigo-resume_2022.pdf" class="p-about__inner__resume c-button is-pink">Download Formal Resume</a>
 
 				<div class="p-about__inner__section">
 					<h2 class="p-about__inner__section__heading">Education</h2>
@@ -42,6 +42,24 @@ get_header();
 
 				<div class="p-about__inner__section">
 					<h2 class="p-about__inner__section__heading">Experience</h2>
+					<div class="p-about__inner__section__item">
+						<h3 class="p-about__inner__section__item__title u-text is-big">Web Developer <br class="u-sp-only">(October 2021-Present)</h3>
+						<p class="p-about__inner__section__item__txt u-text is-small">LH & Creatives – Antel Corporate Centre Valero St, Salcedo Village, Makati City</p>
+						<p class="p-about__inner__section__item__txt u-text is-small">Web Developer mainly focusing on front-end works</p>
+						<dl class="p-about__inner__section__item__content">
+							<dt class="p-about__inner__section__item__content__list u-text is-small">Implementation of Adobe XD or Illustrator designs into a functional and interactable websites</dt>
+							<dt class="p-about__inner__section__item__content__list u-text is-small">Creation of static and animated landing pages</dt>
+							<dt class="p-about__inner__section__item__content__list u-text is-small"> Maintenance and revisions of existing websites according to clients’ requirements</dt>
+							<dt class="p-about__inner__section__item__content__list u-text is-small"> Tech stack in use
+								<dd class="p-about__inner__section__item__content__list__detail u-text is-small">HTML</dd>
+								<dd class="p-about__inner__section__item__content__list__detail u-text is-small">CSS</dd>
+								<dd class="p-about__inner__section__item__content__list__detail u-text is-small">SASS/SCSS</dd>
+								<dd class="p-about__inner__section__item__content__list__detail u-text is-small">PHP</dd>
+								<dd class="p-about__inner__section__item__content__list__detail u-text is-small">Wordpress</dd>
+							</dt>
+							<dt class="p-about__inner__section__item__content__list u-text is-small">Layout, code, and specifications checking of teammates work</dt>
+						</dl>
+					</div>
 					<div class="p-about__inner__section__item">
 						<h3 class="p-about__inner__section__item__title u-text is-big">Process Engineer <br class="u-sp-only">(March 2020-October 2021)</h3>
 						<p class="p-about__inner__section__item__txt u-text is-small">SFA Semicon – Panday Pira, Creekside Ave, Clark, Pampanga</p>

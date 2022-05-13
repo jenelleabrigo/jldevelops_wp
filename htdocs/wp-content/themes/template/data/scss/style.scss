@@ -16,6 +16,7 @@
 /* COMPONENT STYLE */
 @import './component/c-button';
 @import './component/c-headline';
+@import './component/c-form';
 
 
 /* LAYOUT STYLE */
@@ -28,3 +29,4 @@
 @import './layout/pages/not-found';
 @import './layout/pages/index';
 @import './layout/pages/about';
+@import './layout/pages/contact';

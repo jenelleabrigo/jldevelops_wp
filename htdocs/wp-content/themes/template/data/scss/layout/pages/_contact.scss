@@ -1,0 +1,18 @@
+.p-contact {
+    padding-top: 65px;
+
+    &__inner {
+        padding: 6rem 10rem;
+
+        @include mq_sp {
+          padding: 6rem 0;
+        }
+
+        &__title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: $secondary;
+            margin-bottom: 2rem;
+        }
+    }
+}

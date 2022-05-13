@@ -1,7 +1,7 @@
 <footer>
   <div class="l-footer">
     <div class="l-footer__scroll">
-      <a href="<?php echo home_url('#home')?>" class="l-footer__scroll__anchor">TOP</a>
+      <a href="#top" class="l-footer__scroll__anchor">TOP</a>
     </div>
     <div class="u-layout">
       <p class="l-footer__logo"><a href="<?php echo home_url('/') ?>" class="l-footer__logo__anchor"> <img src="<?php echo get_template_directory_uri(); ?>/data/img/common/logo.svg" alt="jldevelops-logo"> </a></p>
