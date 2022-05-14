@@ -16,10 +16,10 @@ get_header();
 		<div class="u-layout">
 			<div class="p-contact__inner">
 				<h2 class="p-contact__inner__title">Get In Touch</h2>
-				<form class="c-form" action="index.html" method="post">
+				<!-- <form class="c-form" action="index.html" method="post">
 					<table class="c-form__table">
 						<tr class="c-form__table__row">
-							<td class="c-form__table__row__td">
+							<td class="c-form__table__row__td with-mb">
 								<input type="text" name="fname" value="" placeholder="First Name" class="c-form__input">
 							</td>
 							<td class="c-form__table__row__td">
@@ -27,7 +27,7 @@ get_header();
 							</td>
 						</tr>
 						<tr class="c-form__table__row">
-							<td class="c-form__table__row__td">
+							<td class="c-form__table__row__td with-mb">
 								<input type="email" name="email" value="" placeholder="Email" class="c-form__input">
 							</td>
 							<td class="c-form__table__row__td">
@@ -45,8 +45,10 @@ get_header();
 							</td>
 						</tr>
 					</table>
-					<button type="submit" name="button" class="c-button c-form__send">Send Email</button>
-				</form>
+					<button type="submit" name="send" class="c-button c-form__send">Send Email</button>
+				</form> -->
+				<?php echo do_shortcode('[contact-form-7 id="20" title="contact form"]'); ?>
+
 			</div>
 		</div>
 	</div>

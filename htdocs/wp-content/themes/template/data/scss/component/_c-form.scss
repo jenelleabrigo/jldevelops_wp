@@ -9,6 +9,16 @@
 
             &__td {
                 width: 100%;
+
+                @include mq_sp {
+                    display: block;
+                }
+
+                &.with-mb {
+                    @include mq_sp {
+                        margin-bottom: 1rem;
+                    }
+                }
             }
 
             &:first-child &__td input {
@@ -31,6 +41,7 @@
 
     &__input,
     &__textarea {
+        color: inherit;
         padding: 1rem;
         width: 100%;
         border-radius: 0.3rem;
@@ -38,6 +49,10 @@
 
         &:focus {
             outline: 1px solid $primary;
+        }
+
+        &::placeholder {
+            opacity: 0.7;
         }
     }
 
@@ -59,4 +74,23 @@
             border: 1px solid $secondary;
         }
     }
+}
+
+//CONTACT FORM 7
+.wpcf7-spinner {
+    display: none !important;
+}
+
+.wpcf7-not-valid-tip {
+    font-size: 0.8rem !important;
+}
+
+.wpcf7-response-output {
+border: none !important;
+color: red !important;
+text-align: center !important;
+}
+
+.wpcf7-form.sent .wpcf7-response-output {
+    color: $secondary !important;
 }

@@ -3,6 +3,7 @@
 
   &__inner {
     padding: 6rem 10rem;
+    position: relative;
 
     @include mq_sp {
       padding: 6rem 0;
@@ -14,6 +15,12 @@
       padding: 10px 10px 10px 40px;
       margin-left: auto;
       margin-bottom: 2rem;
+
+      @include mq_pc {
+          position: absolute;
+          top: 2.5rem;
+          right: 10rem;
+      }
 
       &::after {
         display: none;
