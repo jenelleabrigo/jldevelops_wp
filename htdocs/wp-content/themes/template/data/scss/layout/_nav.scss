@@ -83,6 +83,7 @@
         width: 100%;
         display: block;
         margin-bottom: 2rem;
+        padding-right: 0;
       }
 
       &__anchor {
@@ -138,6 +139,9 @@
       border-radius: 3rem;
       border: 1px dashed $secondary;
       padding: 0.3rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       &:not(:last-child) {
         margin-right: 1rem;
@@ -146,7 +150,6 @@
       & > img {
         height: 1rem;
         position: relative;
-        top: 0.2rem;
       }
 
       &:hover {

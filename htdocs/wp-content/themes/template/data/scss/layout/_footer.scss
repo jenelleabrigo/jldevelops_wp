@@ -12,7 +12,7 @@
   &__scroll {
     position: fixed;
     bottom: 50px;
-    right: 0;
+    right: -20px;
     height: 20px;
     width: 90px;
     transform: rotate(-90deg);
@@ -96,4 +96,8 @@
     padding: 7.5px 0;
     background: $primary;
   }
+}
+
+.disclaimer {
+    display: none !important;
 }

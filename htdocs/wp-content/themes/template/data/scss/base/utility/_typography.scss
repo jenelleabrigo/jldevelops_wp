@@ -24,4 +24,12 @@
   &.is-small {
       font-size: 1rem;
   }
+
+  &.is-pink {
+     color: $primary;
+  }
+
+  &.is-gray {
+      color: $secondary;
+  }
 }

@@ -2,11 +2,11 @@
   padding-top: 65px;
 
   &__inner {
-    padding: 6rem 10rem;
+    padding: 6rem 0;
     position: relative;
 
     @include mq_sp {
-      padding: 6rem 0;
+      padding: 2rem 0 6rem;
     }
 
     &__resume {
@@ -19,7 +19,7 @@
       @include mq_pc {
           position: absolute;
           top: 2.5rem;
-          right: 10rem;
+          right: 0;
       }
 
       &::after {
