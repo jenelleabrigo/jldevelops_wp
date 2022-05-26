@@ -9,8 +9,9 @@
         <a href="tel:09302983017" class="l-footer__icon-container__icon"><img src="<?php echo get_template_directory_uri(); ?>/data/img/common/tel.png" alt="phone"></a>
         <a href="<?php echo home_url('/contact/')?>" class="l-footer__icon-container__icon"><img src="<?php echo get_template_directory_uri(); ?>/data/img/common/mail.svg" alt="mail"></a>
         <a href="https://web.facebook.com/jenelleloise/" target="_blank" class="l-footer__icon-container__icon"><img src="<?php echo get_template_directory_uri(); ?>/data/img/common/fb.svg" alt="fb"></a>
-        <a href="https://github.com/jenelleabrigo" target="_blank" class="l-footer__icon-container__icon"><img src="<?php echo get_template_directory_uri(); ?>/data/img/common/github.svg" alt="github"></a>
         <a href="https://www.linkedin.com/in/jenelleloiseabrigo/" target="_blank" class="l-footer__icon-container__icon"><img src="<?php echo get_template_directory_uri(); ?>/data/img/common/linkedin.svg" alt="linkedin"></a>
+        <a href="https://github.com/jenelleabrigo" target="_blank" class="l-footer__icon-container__icon"><img src="<?php echo get_template_directory_uri(); ?>/data/img/common/github.svg" alt="github"></a>
+        <a href="https://codepen.io/jenelleabrigo" target="_blank" class="l-footer__icon-container__icon"><img src="<?php echo get_template_directory_uri(); ?>/data/img/common/codepen.svg" alt="codepen"></a>
       </div>
     </div>
     <p class="l-footer__copyright">© 2022 JLdevelops</p>

@@ -1,419 +1,481 @@
 .p-index {
-padding-top: 80px;
-
-@include mq_sp {
-    padding-top: 65px;
-}
-
-  &__carousel {
-    height: 600px;
-    background: url("../img/index/bg-main-visual.jpg") no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position-y: 80px;
-    position: relative;
+    padding-top: 80px;
 
     @include mq_sp {
-      height: 28rem;
-      padding: 2rem 0;
-      background: url("../img/index/sp_bg-main-visual.jpg") no-repeat;
-      background-size: cover;
-      background-attachment: fixed;
-      background-position-y: 65px;
+        padding-top: 65px;
     }
 
-    &__text {
-      position: absolute;
-      top: 250px;
-
-      @include mq_pc {
-        &::before {
-          position: absolute;
-          content: "";
-          height: 92px;
-          width: 131px;
-          background: url("../img/common/logo.svg") no-repeat;
-          background-size: contain;
-          left: 0;
-          right: 0;
-          margin: auto;
-          top: -160px;
-          opacity: 0.2;
-        }
-      }
-
-      @include mq_sp {
-        position: static;
-        text-align: center;
-        padding: 0 2px;
-      }
-
-      &1 {
-        font-size: 50px;
-        font-weight: bold;
-        line-height: 1.3;
-        margin-bottom: 20px;
+    &__carousel {
+        height: 600px;
+        background: url("../img/index/bg-main-visual.jpg") no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position-y: 80px;
+        position: relative;
 
         @include mq_sp {
-          font-size: 2rem;
-          line-height: 1;
-          margin-bottom: 2rem;
+            height: 28rem;
+            padding: 2rem 0;
+            background: url("../img/index/sp_bg-main-visual.jpg") no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position-y: 65px;
         }
 
-        &__span1 {
-          @include mq_sp {
-            font-size: 3rem;
-          }
-        }
-
-        &__span2 {
-          color: $primary;
-
-          @include mq_sp {
-            font-size: 3rem;
-          }
-        }
-      }
-
-      &2 {
-        font-size: 16px;
-        line-height: 1.5;
-        margin-bottom: 20px;
-
-        &__span {
-          color: $primary;
-          font-size: 30px;
-
-          @include mq_sp {
-            font-size: 1.5rem;
-            display: inline-block;
-            letter-spacing: -1px;
-          }
-        }
-      }
-    }
-  }
-
-  &__techstack {
-    background: $primary;
-    padding: 100px 0;
-
-    &__inner {
-      background: #fff;
-      padding: 3rem;
-      border-radius: 30px;
-      border: 2px solid $secondary;
-
-      @include mq_sp {
-        padding: 1rem;
-      }
-
-      &__section {
-        display: grid;
-        grid-template-columns: repeat(9, 1fr);
-        align-items: end;
-        text-align: center;
-        grid-gap: 1.5rem 1rem;
-
-        @include mq_sp {
-          grid-template-columns: repeat(3, 1fr);
-        }
-
-        &__name {
-          position: relative;
-
-          &__span {
-            display: block;
-            margin-bottom: 0.5rem;
-            text-align: center;
-            font-size: 12px;
-          }
-        }
-
-        &__logo {
-          height: 3rem;
-          width: 3rem;
-          border-radius: 100%;
-        }
-      }
-    }
-  }
-
-  &__works {
-    position: relative;
-    background: url("../img/index/bg-works.png") no-repeat center center/cover;
-    padding: 100px 0 200px;
-
-    @include mq_sp {
-      background: url("../img/index/sp_bg-works.png") no-repeat center center/cover;
-      padding: 100px 0 150px;
-    }
-
-    &__inner {
-      position: relative;
-      display: flex;
-      gap: 60px;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-
-      @include mq_sp {
-        display: block;
-      }
-
-      &__item-container {
-        display: block;
-        width: 30%;
-
-        @include mq_sp {
-          width: 100%;
-          margin-bottom: 50px;
-
-          &:last-child{
-            margin-bottom: 0;
-          }
-        }
-      }
-
-      &__item {
-        &__img-container {
-            height: 250px;
-            margin-bottom:25px;
-            overflow: hidden;
-            border-radius: 30px;
-            border: 1px solid $secondary;
-
-            @include mq_sp {
-              height: 60vw;
-            }
-
-          &__img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-            border-radius: 30px;
-          }
-        }
-
-        &__text-container {
-          &__title {
-            font-weight: bold;
-            color: $primary;
-            margin-bottom: 25px;
-          }
-
-          &__description {
-            //
-          }
-        }
-      }
-
-      &__modal {
-        display: none;
-        top: 80px;
-        left: 0;
-        z-index: 99;
-        position: fixed;
-        height: 100%;
-        width: 100%;
-        background: rgba(112, 112, 112, 0.9);
-
-        &.is-show {
-            display: block;
-        }
-
-        &__content {
-          overflow: auto;
-          height: 70%;
-          width: 80%;
-          margin: auto;
-          background: #fff;
-          position: absolute;
-          top: 10%;
-          left: 0;
-          right: 0;
-          margin: auto;
-          padding: 10px 15px;
-
-          &__title {
-              font-weight: bold;
-          }
-
-          &__slide {
-              position: relative;
-          }
-        }
-
-        &__close {
-          font-size: 50px;
-          position: relative;
-          z-index: 100;
-          position: absolute;
-          right: 5%;
-          top: 0;
-          cursor: default;
-          color: #fff;
-
-          @include mq_sp {
-            font-size: 2rem;
-          }
-
-          &:hover {
-            opacity: 0.7;
-          }
-        }
-      }
-    }
-  }
-
-  &__journey {
-    position: relative;
-    background: url("../img/index/bg-journey.png") no-repeat top center/cover;
-    padding: 120px 0 100px;
-    margin-top: -70px;
-
-    @include mq_sp {
-      background: url("../img/index/sp_bg-journey.png") no-repeat top center/cover;
-      padding: 100px 0 150px;
-    }
-
-    &__inner {
-      padding-left: 15px;
-
-      @include mq_sp {
-        padding-left: 0;
-      }
-
-      &__table {
-        border-collapse: collapse;
-
-        &__row {
-          margin-bottom: 40px;
-          color: #fff;
-          border-left: 1px solid $secondary;
-
-          @include mq_sp {
-              border-left: 0;
-              margin-bottom: 2rem;
-              display: block;
-          }
-
-          &:last-child {
-            border-left: 0;
-          }
-        }
-
-        &__date {
-          font-weight: bold;
-          vertical-align: top;
-          position: relative;
-          width: 200px;
-          padding: 0 0 40px 60px;
-          text-align: left;
-
-          @include mq_sp {
-            display: block;
-            padding: 0 0 0 4rem;
-            text-align: left;
-            width: 100%;
-            margin-bottom: 1rem;
-          }
-
-          &::before {
+        &__text {
             position: absolute;
-            content: "";
-            height: 30px;
-            width: 30px;
-            background: url("../img/journey/icon-circle.svg") no-repeat center center/contain;
-            left: -15px;
-            top: -4px;
+            top: 250px;
+
+            @include mq_pc {
+                &::before {
+                    position: absolute;
+                    content: "";
+                    height: 92px;
+                    width: 131px;
+                    background: url("../img/common/logo.svg") no-repeat;
+                    background-size: contain;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    top: -160px;
+                    opacity: 0.2;
+                }
+            }
 
             @include mq_sp {
-              left: 0;
-              top: 0;
-              height: 1.5rem;
-              width: 1.5rem;
-              z-index: 1;
+                position: static;
+                text-align: center;
+                padding: 0 2px;
             }
-          }
 
-          &::after {
-            @include mq_sp {
-              position: absolute;
-              content: "";
-              height: 0;
-              width: 3.5rem;
-              border-bottom: 1px solid $secondary;
-              left: 0;
-              top: 0;
-              bottom: 0;
-              margin: auto;
+            &1 {
+                font-size: 50px;
+                font-weight: bold;
+                line-height: 1.3;
+                margin-bottom: 20px;
+
+                @include mq_sp {
+                    font-size: 2rem;
+                    line-height: 1;
+                    margin-bottom: 2rem;
+                }
+
+                &__span1 {
+                    @include mq_sp {
+                        font-size: 3rem;
+                    }
+                }
+
+                &__span2 {
+                    color: $primary;
+
+                    @include mq_sp {
+                        font-size: 3rem;
+                    }
+                }
             }
-          }
-        }
 
-        &__details {
-          padding: 0 0 40px 50px;
+            &2 {
+                font-size: 16px;
+                line-height: 1.5;
+                margin-bottom: 20px;
 
-          @include mq_sp {
-            width: 100%;
-            display: block;
-            padding: 0;
-          }
+                &__span {
+                    color: $primary;
+                    font-size: 30px;
+
+                    @include mq_sp {
+                        font-size: 1.5rem;
+                        display: inline-block;
+                        letter-spacing: -1px;
+                    }
+                }
+            }
         }
-      }
     }
-  }
 
-  /* width */
-  ::-webkit-scrollbar {
-    width: 10px;
-  }
+    &__techstack {
+        background: $primary;
+        padding: 100px 0;
 
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-    border-radius: 10px;
-  }
+        &__inner {
+            background: #fff;
+            padding: 3rem;
+            border-radius: 30px;
+            border: 2px solid $secondary;
 
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: $secondary;
-    border-radius: 10px;
-  }
+            @include mq_sp {
+                padding: 1rem;
+            }
 
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgba(112, 112, 112, 0.7);
-  }
+            &__section {
+                text-align: center;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-end;
+                gap: 1rem;
+
+                @include mq_sp {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+
+                &__name {
+                    position: relative;
+                    width: 7rem;
+
+                    @include mq_sp {
+                        width: auto;
+                    }
+
+                    &__span {
+                        display: block;
+                        margin-bottom: 0.5rem;
+                        text-align: center;
+                        font-size: 12px;
+                    }
+                }
+
+                &__logo {
+                    height: 3rem;
+                    width: 3rem;
+                    border-radius: 100%;
+                }
+            }
+        }
+    }
+
+    &__works {
+        position: relative;
+        background: url("../img/index/bg-works.png") no-repeat center center/cover;
+        padding: 100px 0 200px;
+
+        @include mq_sp {
+            background: url("../img/index/sp_bg-works.png") no-repeat center center/cover;
+            padding: 100px 0 150px;
+        }
+
+        &__inner {
+            position: relative;
+            display: flex;
+            gap: 60px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+            @include mq_sp {
+                display: block;
+            }
+
+            &__item-container {
+                display: block;
+                width: 20rem;
+
+                @include mq_sp {
+                    width: 100%;
+                    margin-bottom: 50px;
+
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            &__item {
+                &__img-container {
+                    height: 250px;
+                    margin-bottom:25px;
+                    overflow: hidden;
+                    border-radius: 30px;
+                    border: 1px solid $secondary;
+
+                    @include mq_sp {
+                        height: 60vw;
+                    }
+
+                    &.is-default {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    &__img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                        border-radius: 30px;
+
+                        &.is-default {
+                            width: 50%;
+                            height: auto;
+                            object-fit: contain;
+                        }
+                    }
+                }
+
+                &__text-container {
+                    &__title {
+                        font-weight: bold;
+                        color: $primary;
+                        margin-bottom: 25px;
+                    }
+
+                    &__description {
+                        //
+                    }
+                }
+            }
+
+            &__modal {
+                display: none;
+                top: 80px;
+                left: 0;
+                z-index: 99;
+                position: fixed;
+                height: 100%;
+                width: 100%;
+                background: rgba(112, 112, 112, 0.9);
+
+                @include mq_sp {
+                    top: 65px;
+                }
+
+                &.is-show {
+                    display: block;
+                }
+
+                &__content {
+                    text-align: center;
+                    overflow: auto;
+                    height: 70%;
+                    width: 80%;
+                    margin: auto;
+                    background: #fff;
+                    position: absolute;
+                    top: 10%;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    padding: 2rem;
+
+                    @include mq_sp {
+                        width: 90%;
+                        padding: 10px 15px;
+                    }
+
+                    &__title {
+                        font-weight: bold;
+                        margin-bottom: 0.5rem;
+                    }
+
+                    &__techstack {
+                        margin-bottom: 0.5rem;
+
+                        &__logo {
+                            height: 1.5rem;
+                            width: 1.5rem;
+                            border: 1px solid $secondary;
+                            border-radius: 100%;
+                            border-radius: 100%;
+                            object-fit: contain;
+                        }
+                    }
+
+                    &__link {
+                        color: inherit;
+
+                        &:hover {
+                            color: $primary;
+                        }
+                    }
+
+                    &__text {
+                        margin-top: 2rem;
+                    }
+
+                    &__slide {
+                        position: relative;
+                    }
+                }
+
+                &__close {
+                    font-size: 50px;
+                    position: relative;
+                    z-index: 100;
+                    position: absolute;
+                    right: 5%;
+                    top: 0;
+                    cursor: default;
+                    color: #fff;
+
+                    @include mq_sp {
+                        font-size: 2rem;
+                    }
+
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                }
+            }
+        }
+    }
+
+    &__journey {
+        position: relative;
+        background: url("../img/index/bg-journey.png") no-repeat top center/cover;
+        padding: 200px 0 150px;
+        margin-top: -70px;
+
+        @include mq_sp {
+            background: url("../img/index/sp_bg-journey.png") no-repeat top center/cover;
+            padding: 100px 0 150px;
+        }
+
+        &__inner {
+            padding-left: 15px;
+
+            @include mq_sp {
+                padding-left: 0;
+            }
+
+            &__table {
+                border-collapse: collapse;
+
+                &__row {
+                    margin-bottom: 40px;
+                    color: #fff;
+                    border-left: 1px solid $secondary;
+
+                    @include mq_sp {
+                        border-left: 0;
+                        margin-bottom: 2rem;
+                        display: block;
+                    }
+
+                    &:last-child {
+                        border-left: 0;
+                    }
+                }
+
+                &__date {
+                    font-weight: bold;
+                    vertical-align: top;
+                    position: relative;
+                    width: 200px;
+                    padding: 0 0 40px 60px;
+                    text-align: left;
+
+                    @include mq_sp {
+                        display: block;
+                        padding: 0 0 0 4rem;
+                        text-align: left;
+                        width: 100%;
+                        margin-bottom: 1rem;
+                    }
+
+                    &::before {
+                        position: absolute;
+                        content: "";
+                        height: 30px;
+                        width: 30px;
+                        background: url("../img/journey/icon-circle.svg") no-repeat center center/contain;
+                        left: -15px;
+                        top: -4px;
+
+                        @include mq_sp {
+                            left: 0;
+                            top: 0;
+                            height: 1.5rem;
+                            width: 1.5rem;
+                            z-index: 1;
+                        }
+                    }
+
+                    &::after {
+                        @include mq_sp {
+                            position: absolute;
+                            content: "";
+                            height: 0;
+                            width: 3.5rem;
+                            border-bottom: 1px solid $secondary;
+                            left: 0;
+                            top: 0;
+                            bottom: 0;
+                            margin: auto;
+                        }
+                    }
+                }
+
+                &__details {
+                    padding: 0 0 40px 50px;
+
+                    @include mq_sp {
+                        width: 100%;
+                        display: block;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: $secondary;
+        border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgba(112, 112, 112, 0.7);
+    }
 }
 
 .splide {
     width: 90%;
-    margin: 3.5rem auto 2rem;
-    height: 20rem;
-    overflow-y: scroll;
+    margin: auto;
+    height: auto;
+    padding: 2rem 0;
     position: static !important;
+
+    @include mq_sp {
+        margin: 1.5rem auto;
+    }
 
     &__slide {
         text-align: center;
         width: 100%;
-    }
 
-    &__arrows {
-        position: absolute;
-        top: -1.5rem;
-        left: 48.5%;
-    }
+        > img {
+            max-height: 14rem;
 
-    &__arrow {
-        &--prev {
-            left: -1rem !important;
+            @include mq_sp {
+                max-width: 100%;
+            }
         }
+    }
 
-        &--next {
-            left: 1rem !important;
+    &__pagination {
+        bottom: 0 !important;
+
+        &__page {
+            background: $secondary !important;
+
+            &.is-active {
+                background: $primary !important;
+            }
         }
     }
 }

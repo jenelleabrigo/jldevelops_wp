@@ -72,5 +72,7 @@ slide.forEach(function(item){
     new Splide( item, {
 		type: 'loop',
         perPage: 1,
+        focus: 'center',
+        autoHeight: true,
   } ).mount();
 })

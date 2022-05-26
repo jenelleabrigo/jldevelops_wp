@@ -2,7 +2,7 @@
     &__table {
         width: 100%;
         table-layout: fixed;
-        border-spacing: 1rem;
+        border-spacing: 1rem 2rem;
 
         &__row {
             width: 100%;
@@ -84,6 +84,7 @@
 
 .wpcf7-not-valid-tip {
     font-size: 0.8rem !important;
+    position: absolute;
 }
 
 .wpcf7-response-output {
