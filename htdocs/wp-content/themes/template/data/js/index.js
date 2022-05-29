@@ -65,8 +65,10 @@
   $(window).scroll(function(){
     if ($(window).scrollTop() > $(".p-index__carousel").height()){
       $(".l-footer__scroll").addClass("is-show");
+      $(".l-footer__codepen").addClass("is-show");
     } else {
       $(".l-footer__scroll").removeClass("is-show");
+      $(".l-footer__codepen").removeClass("is-show");
     }
   })
 

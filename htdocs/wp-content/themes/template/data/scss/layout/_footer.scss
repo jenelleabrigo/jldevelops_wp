@@ -11,13 +11,14 @@
 
   &__scroll {
     position: fixed;
-    bottom: 50px;
+    bottom: 20px;
     right: -20px;
     height: 20px;
     width: 90px;
     transform: rotate(-90deg);
     transition: 0.3s;
     opacity: 0;
+    z-index: 1;
 
     &.is-show {
       opacity: 1;
@@ -31,6 +32,10 @@
       font-weight: bold;
       position: relative;
 
+      @include mq_sp {
+          font-size: 12px;
+      }
+
       &::after {
         position: absolute;
         content: "";
@@ -43,8 +48,67 @@
         right: 5px;
         margin: auto;
         transform: rotate(90deg);
+
+        @include mq_sp {
+            height: 8.5px;
+            width: 12px;
+            right: 12px;
+        }
       }
     }
+  }
+
+  &__codepen {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      display: inline-block;
+      z-index: 1;
+      opacity: 0;
+      transition: 0.3s;
+
+      &.is-show {
+          opacity: 1;
+      }
+
+      &__icon {
+          display: inline-block;
+          box-shadow: 0 0 10px $secondary;
+          position: relative;
+
+          > img {
+              height: 35px;
+              width: auto;
+
+              @include mq_sp {
+                  height: 28px;
+              }
+          }
+
+          &::after {
+              position: absolute;
+              content: "View more work!";
+              height: 1rem;
+              width: max-content;
+              top: 0;
+              bottom: 0;
+              margin: auto;
+              left: 0;
+              color: $secondary;
+              transition: 0.3s;
+              font-size: 13px;
+              opacity: 0;
+          }
+
+          &:hover::after {
+              opacity: 1;
+              left: 3rem;
+
+              @include mq_sp {
+                  left: 2rem;
+              }
+          }
+      }
   }
 
   &__logo {
