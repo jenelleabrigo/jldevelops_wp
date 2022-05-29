@@ -6,7 +6,7 @@
     }
 
     &__carousel {
-        height: 600px;
+        height: 100vh;
         background: url("../img/index/bg-main-visual.jpg") no-repeat;
         background-size: cover;
         background-attachment: fixed;
@@ -16,7 +16,7 @@
         @include mq_sp {
             height: 28rem;
             padding: 2rem 0;
-            background: url("../img/index/sp_bg-main-visual.jpg") no-repeat;
+            background: url("../img/index/sp_bg-main-visual.jpg") no-repeat center center;
             background-size: cover;
             background-attachment: fixed;
             background-position-y: 65px;
@@ -24,7 +24,7 @@
 
         &__text {
             position: absolute;
-            top: 250px;
+            top: 30vh;
 
             @include mq_pc {
                 &::before {
@@ -224,6 +224,11 @@
                     &__description {
                         //
                     }
+                }
+
+                &:hover {
+                    opacity: 0.7;
+                    cursor: pointer;
                 }
             }
 

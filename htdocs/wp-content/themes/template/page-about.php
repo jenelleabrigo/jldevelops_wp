@@ -12,7 +12,7 @@ get_header();
 
 <main id="top">
 
-	<div class="p-about">
+	<section class="p-about">
 		<div class="u-layout">
 			<div class="p-about__inner">
 				<a download="Jenelle Loise Abrigo Resume" href="<?php echo get_template_directory_uri();?>/data/pdf/jenelle-abrigo-resume_2022.pdf" class="p-about__inner__resume c-button is-pink">Download Formal Resume</a>
@@ -114,7 +114,7 @@ get_header();
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
 </main><!-- #site-content -->
 

@@ -79,7 +79,9 @@
 
 //CONTACT FORM 7
 .wpcf7-spinner {
-    display: none !important;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: auto !important;
 }
 
 .wpcf7-not-valid-tip {

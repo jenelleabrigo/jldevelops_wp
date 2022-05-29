@@ -1,4 +1,4 @@
-<div class="p-index__works" id="works">
+<section class="p-index__works" id="works">
     <div class="u-layout">
         <h2 class="c-headline u-subheading u-font-serif">WORKS</h2>
 
@@ -36,4 +36,4 @@
         <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
         </div>
     </div>
-</div>
+</section>

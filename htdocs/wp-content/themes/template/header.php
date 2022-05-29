@@ -35,7 +35,7 @@
 
             <div class="">
                 <ul class="l-nav__content u-pc-only">
-                    <li class="l-nav__content__menu"><a href="<?php echo home_url('/#home')?>" class="l-nav__content__menu__anchor u-font-serif">Home</a></li>
+                    <li class="l-nav__content__menu"><a href="<?php echo home_url('/#home')?>" class="l-nav__content__menu__anchor is-home u-font-serif">Home</a></li>
                     <li class="l-nav__content__menu"><a href="<?php echo home_url('/#works')?>" class="l-nav__content__menu__anchor u-font-serif">Works</a></li>
                     <li class="l-nav__content__menu"><a href="<?php echo home_url('/#journey')?>" class="l-nav__content__menu__anchor u-font-serif">Journey</a></li>
                     <li class="l-nav__content__menu"><a href="<?php echo home_url('/about/')?>" class="l-nav__content__menu__anchor u-font-serif">About Me</a></li>

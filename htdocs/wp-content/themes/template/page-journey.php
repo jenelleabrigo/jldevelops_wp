@@ -1,4 +1,4 @@
-<div class="p-index__journey" id="journey">
+<section class="p-index__journey" id="journey">
     <div class="u-layout">
         <h2 class="c-headline is-white u-font-serif">JOURNEY</h2>
 
@@ -57,4 +57,4 @@
             </table>
         </div>
     </div>
-</div>
+</section>

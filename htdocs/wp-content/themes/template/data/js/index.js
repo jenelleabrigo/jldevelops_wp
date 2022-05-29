@@ -23,6 +23,11 @@
         $(this).addClass("is-active");
       })
     })
+    if (window.location.pathname == '/') {
+        $('.is-home').addClass("is-active");
+    } else {
+        $('.is-home').removeClass("is-active")
+    }
   })
 
   //header on scroll

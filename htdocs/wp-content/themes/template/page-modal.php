@@ -9,7 +9,7 @@
 					if ($values) :
 					foreach ($values as $value) :
 				 ?>
-				 <img src="<?php echo $value['value'];?>" alt="<?php echo $value['label'];?>" class="p-index__works__inner__modal__content__techstack__logo">
+				 <img src="<?php echo $value['value'];?>" alt="<?php echo $value['label'];?>"  title="<?php echo $value['label'];?>" class="p-index__works__inner__modal__content__techstack__logo">
 			 <?php endforeach; endif; ?>
 			</div>
 		</div>
