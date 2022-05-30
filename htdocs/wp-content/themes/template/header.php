@@ -3,11 +3,21 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="keywords" content="jldevelops developsjl jenelle loise abrigo portfolio wordpress">
+    <meta name="description" content="A simple portfolio for showcasing works of jldevelops.">
+    <!-- OGP -->
+    <meta property="og:title" content="JLdevelops Portfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="A simple portfolio for showcasing works of jldevelops.">
+    <meta property="og:url" content="developsjl.000webhostapp.com">
+    <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/data/img/ogp/hero.jpg">
+    <meta property="og:site_name" content="jldevelops">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/data/img/ogp/logo.svg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/data/css/style.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/data/js/splide/splide.min.css">
-    <title>jldevelops</title>
+    <title>JLdevelops Portfolio</title>
     <?php wp_head(); ?>
   </head>
   <body>
